@@ -7,6 +7,9 @@ Press 'N' key to stop the program or any other key for another poem.
 Modifications made to assembly version:
 
 The words and sentences are padded out to fixed lengths with a zero bit (@) to terminate them. This is to make it easier to select random words and sentences with an algorithm.
+
 Some minor spelling corrections :D
+
 A line is left between each line of poetry - mostly so I didn't have to deal with lines that wrapped over two lines
+
 The program asks the user if they'd like another poem and scans for Y & N, rather than just N
