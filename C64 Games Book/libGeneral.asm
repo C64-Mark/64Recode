@@ -12,6 +12,17 @@ defm 	LIBGENERAL_INITRAND
         sta VCREG3
 
         endm
+        
+;Initialise time of day clock
+defm    LIBGENERAL_INITTODCLOCK
+
+        lda #$00
+        sta TODH
+        sta TODM
+        sta TODS
+        sta TODMS
+        
+        endm
 
 ;Create an 8-bit random number between upper and lower
 defm 	LIBGENERAL_GENERATE_8BIT_RAND_VVA ;Lower, Upper, Target

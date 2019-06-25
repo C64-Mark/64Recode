@@ -25,4 +25,6 @@ charM           = #36
 charN           = #39
 charY           = #25
 charZ           = #12
+charC           = #20
+charNone        = #40
 

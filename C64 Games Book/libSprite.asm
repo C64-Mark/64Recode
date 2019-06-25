@@ -36,6 +36,22 @@ defm    LIBSPRITE_SETPOINTER_VV ;SpriteNumber, Value
         
         endm
 
+defm    LIBSPRITE_SETCOLOUR_VV ;SpriteNumber, Value
+
+        lda #/2
+        sta SPRCOL0 + /1
+        
+        endm
+
+defm    LIBSPRITE_EXPAND_VV ;X-expand, Y-expand
+
+        lda #/1
+        sta SPRXEX
+        lda #/2
+        sta SPRYEX
+        
+        endm
+        
 defm    LIBSPRITE_SETPOSITION_VAA ;SpriteNumber, X Source, Y Source
 
         lda #/1

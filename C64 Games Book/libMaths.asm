@@ -142,7 +142,7 @@ defm 	LIBMATHS_TWOS_COMPLEMENT_AA ;Source, Target
 
         endm
 
-defm 	BCD_ADD_8BIT_AVA ;Source, Value, Target
+defm 	LIBMATHS_BCD_ADD_16BIT_AVA ;Source, Value, Target
 
         sed
         clc
@@ -158,6 +158,28 @@ defm 	BCD_ADD_8BIT_AVA ;Source, Value, Target
         adc #$01
         sta /3 + 1
 @exit
+        cld
+
+        endm
+        
+defm LIBMATHS_BCD_ADD_8BIT_AVA ; addSource, bytValue, addTarget
+
+        sed
+        clc
+        lda /1
+        adc #/2
+        sta /3
+        cld
+
+        endm
+
+defm LIBMATHS_BCD_SUBTRACT_8BIT_AVA ; addSource, bytValue, addTarget
+
+        sed
+        sec
+        lda /1
+        sbc #/2
+        sta /3
         cld
 
         endm
