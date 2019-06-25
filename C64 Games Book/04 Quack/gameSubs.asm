@@ -49,8 +49,8 @@ PosDucks
         iny
         cpy #$04
         bne PosDucks
-        LIBSCREEN_VERTICALCHAR_VVVAA #160, #4, #23, $0450, $D850
-        LIBSCREEN_VERTICALCHAR_VVVAA #160, #4, #23, $0470, $D870
+        LIBSCREEN_VERTICALCHAR_VVVAA #160, purple, #23, $0450, $D850
+        LIBSCREEN_VERTICALCHAR_VVVAA #160, purple, #23, $0470, $D870
         LIBSCREEN_WRITECHAR_VVA #33, #160, $0428
         LIBSCREEN_TEXTCOLOUR_VVA #$33, purple, $D828
         LIBSCREEN_WRITE_VAA #$27, title, $0400
