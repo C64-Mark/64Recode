@@ -45,8 +45,8 @@ Objects_MoveTurkey
         lda turkeyY
         sta SPRY1
 
-        lda turkeyY
-        cmp #TOP_BOUNDARY
+        lda turkeyY                     ; check if the turkey has reached
+        cmp #TOP_BOUNDARY               ; the top border
         bcs .CheckLowerBoundary
         lda #$01
         sta yDelta                      ; set turkey Y direction to down
