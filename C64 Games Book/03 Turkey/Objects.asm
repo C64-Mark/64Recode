@@ -102,16 +102,12 @@ Objects_CheckCollision
         bne .CheckCollision             ; collision
         rts
 .CheckCollision
-        lda turkeyY                     ; create hit boxes for the turkey
-        clc                             ; and the waiter
-        adc #$14
-        sta turkeyYLowerBound           ; this makes an allowance for the
-        lda turkeyX                     ; fact that the sprite doesn't take
-        clc                             ; up the whole sprite grid, so
-        adc #$02                        ; we offset the empty sprite
-        sta turkeyXLowerBound           ; space
-        clc
-        adc #$14
+        lda turkeyX                     ; create hit boxes for the turkey and
+        clc                             ; the waiter. This makes an allowance
+        adc #$02                        ; for the fact that the sprite doesn't
+        sta turkeyXLowerBound           ; take up the whole sprite grid, so we
+        clc                             ; offset the empty sprite space. 
+        adc #$14                        
         sta turkeyXUpperBound           ; the waiter has a fixed Y so we
         lda waiterX                     ; only need to check the turkey Y
         clc                             ; against a lower bound

@@ -15,7 +15,6 @@ turkeyY                 byte $00
 
 waiterXLowerBound       byte $00
 waiterXUpperBound       byte $00
-turkeyYLowerBound       byte $00
 turkeyXLowerBound       byte $00
 turkeyXUpperBound       byte $00
 
