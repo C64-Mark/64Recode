@@ -14,4 +14,3 @@ Modifications made to machine code version:
 
 The description above from the book suggests the ducks move at a variable speed, but there is nothing in the original basic to make it happen. It would be relatively easy to build in to the program however.
 
-I have not managed to code the sound effects yet as my SID/machine code programming knowledge is currently quite limited.
